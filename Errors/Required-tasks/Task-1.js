@@ -4,7 +4,8 @@ function reverseString(str){
     try {
         return str.split('').reverse().join('');
     } catch(err) {
-        return err.message;
+        console.error(err.message);
+        return str;
     }
 }
 
